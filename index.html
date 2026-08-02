@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Елизавета Колпачкова — предприниматель, продуктовый менеджер и дизайнер</title>
+<meta name="description" content="Помогаю компаниям и стартапам превращать идеи в продукты, которые готовы к рынку, пользователям и инвестициям.">
+<meta name="theme-color" content="#1B110B">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Елизавета Колпачкова">
+<meta property="og:description" content="Помогаю компаниям и стартапам превращать идеи в продукты, которые готовы к рынку, пользователям и инвестициям.">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+<link rel="icon" href="assets/favicon-256.png" sizes="256x256">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400&family=Onest:wght@300;400;500&family=Unbounded:wght@200;300&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ░░ ЭКРАН ЗАГРУЗКИ ░░ -->
+<div id="preloader" aria-hidden="true">
+  <div class="pre-inner">
+    <span class="pre-name mono" data-ru="ЕЛИЗАВЕТА КОЛПАЧКОВА" data-en="ELIZAVETA KOLPACHKOVA">ЕЛИЗАВЕТА КОЛПАЧКОВА</span>
+    <div class="pre-bar"><i id="preBar"></i></div>
+    <span class="pre-num mono" id="preNum">000</span>
+  </div>
+</div>
+
+<!-- ░░ СКАЛА С РОЗАМИ ░░ -->
+<canvas id="scene" aria-hidden="true"></canvas>
+<div id="glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<!-- ░░ ШАПКА ░░ -->
+<header class="head">
+  <a class="mark" href="#top" aria-label="Наверх">
+    <svg class="mark-g" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <g fill="currentColor">
+        <path d="M12 1.6C14.1 6 14.9 8.8 12 12 9.1 8.8 9.9 6 12 1.6Z"/>
+        <path d="M12 1.6C14.1 6 14.9 8.8 12 12 9.1 8.8 9.9 6 12 1.6Z" transform="rotate(90 12 12)"/>
+        <path d="M12 1.6C14.1 6 14.9 8.8 12 12 9.1 8.8 9.9 6 12 1.6Z" transform="rotate(180 12 12)"/>
+        <path d="M12 1.6C14.1 6 14.9 8.8 12 12 9.1 8.8 9.9 6 12 1.6Z" transform="rotate(270 12 12)"/>
+      </g>
+    </svg>
+  </a>
+  <div class="head-r">
+    <div class="lang mono" role="group" aria-label="Язык / Language">
+      <button type="button" data-lang="ru" class="is-on">RU</button>
+      <span class="lang-s">/</span>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+    <a class="cta mono" href="#contact" data-ru="Связаться" data-en="Get in touch">Связаться</a>
+  </div>
+</header>
+
+<!-- ░░ ИНДИКАТОР РАСКРЫТИЯ ░░ -->
+<div class="rail rail-r mono" aria-hidden="true">
+  <span class="rail-track"><i id="railDot"></i></span>
+  <span class="rail-num" id="bloomNum">00</span>
+</div>
+
+<main id="top">
+
+  <!-- ── 01 ГЕРОЙ ── -->
+  <section class="stage stage-hero reveal scrim" id="hero">
+    <div class="wrap">
+      <h1 class="h-1">
+        <span class="l1 split" data-ru="Елизавета" data-en="Elizaveta"></span>
+        <span class="l2 split" data-ru="Колпачкова" data-en="Kolpachkova"></span>
+      </h1>
+      <p class="role rv" style="--d:520ms" data-ru="Предприниматель, продуктовый менеджер и дизайнер." data-en="Entrepreneur, product manager and designer."></p>
+    </div>
+  </section>
+
+  <!-- ── 02 МАНИФЕСТ ── -->
+  <section class="stage stage-manifest reveal scrim" id="manifest">
+    <div class="wrap">
+      <span class="idx mono rv">01</span>
+      <p class="manifest split"
+         data-ru="Помогаю компаниям и стартапам превращать *идеи* в *продукты*, которые готовы к рынку, пользователям и инвестициям."
+         data-en="I help companies and startups turn *ideas* into *products* that are ready for the market, users and investment."></p>
+    </div>
+  </section>
+
+  <!-- ── 03 ОБЛАСТИ РАБОТЫ ── -->
+  <section class="stage stage-areas-t reveal scrim" id="areas">
+    <div class="wrap">
+      <span class="idx mono rv">02</span>
+      <h2 class="h-2 split" data-ru="Области работы" data-en="Areas of work"></h2>
+    </div>
+  </section>
+
+  <article class="stage area reveal scrim" data-side="l">
+    <div class="wrap area-in">
+      <span class="area-n mono rv">01</span>
+      <h3 class="area-t split" data-ru="Запуск продукта" data-en="Product launch"></h3>
+      <p class="area-d rv" style="--d:260ms"
+         data-ru="Исследование рынка, концепция, MVP и подготовка к выходу на рынок."
+         data-en="Market research, concept, MVP and go-to-market preparation."></p>
+    </div>
+  </article>
+
+  <article class="stage area reveal scrim" data-side="r">
+    <div class="wrap area-in">
+      <span class="area-n mono rv">02</span>
+      <h3 class="area-t split" data-ru="Стратегия" data-en="Strategy"></h3>
+      <p class="area-d rv" style="--d:260ms"
+         data-ru="Позиционирование, анализ аудитории и поиск точек роста."
+         data-en="Positioning, audience analysis and finding points of growth."></p>
+    </div>
+  </article>
+
+  <article class="stage area reveal scrim" data-side="l">
+    <div class="wrap area-in">
+      <span class="area-n mono rv">03</span>
+      <h3 class="area-t split" data-ru="Дизайн" data-en="Design"></h3>
+      <p class="area-d rv" style="--d:260ms"
+         data-ru="Брендинг, интерфейсы, сайты и презентации."
+         data-en="Branding, interfaces, websites and presentations."></p>
+    </div>
+  </article>
+
+  <article class="stage area reveal scrim" data-side="r">
+    <div class="wrap area-in">
+      <span class="area-n mono rv">04</span>
+      <h3 class="area-t split" data-ru="Развитие" data-en="Growth"></h3>
+      <p class="area-d rv" style="--d:260ms"
+         data-ru="Контент, маркетинг и построение коммуникации с аудиторией."
+         data-en="Content, marketing and building communication with the audience."></p>
+    </div>
+  </article>
+
+  <!-- ── 04 КОНТАКТЫ ── -->
+  <section class="stage stage-contact reveal scrim-c" id="contact">
+    <div class="wrap">
+      <span class="idx mono rv">03</span>
+      <h2 class="h-2 h-2c split" data-ru="Связаться" data-en="Get in touch"></h2>
+
+      <div class="rows">
+        <a class="row rv" style="--d:160ms" href="https://t.me/kolpachkovaelizaveta" target="_blank" rel="noopener noreferrer">
+          <span class="row-k mono">Telegram</span>
+          <span class="row-v">@kolpachkovaelizaveta</span>
+          <span class="row-a" aria-hidden="true">↗</span>
+        </a>
+        <a class="row rv" style="--d:240ms" href="https://www.behance.net/3199f929" target="_blank" rel="noopener noreferrer">
+          <span class="row-k mono">Behance</span>
+          <span class="row-v" data-ru="Портфолио" data-en="Portfolio">Портфолио</span>
+          <span class="row-a" aria-hidden="true">↗</span>
+        </a>
+        <a class="row rv" style="--d:320ms" href="https://www.instagram.com/kolpachkovaelizaveta/" target="_blank" rel="noopener noreferrer">
+          <span class="row-k mono">Instagram</span>
+          <span class="row-v">@kolpachkovaelizaveta</span>
+          <span class="row-a" aria-hidden="true">↗</span>
+        </a>
+        <a class="row rv" style="--d:400ms" href="mailto:kolpachkova00@gmail.com">
+          <span class="row-k mono">Email</span>
+          <span class="row-v">kolpachkova00@gmail.com</span>
+          <span class="row-a" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span class="mono" data-ru="© 2026 Елизавета Колпачкова" data-en="© 2026 Elizaveta Kolpachkova">© 2026 Елизавета Колпачкова</span>
+  <a class="mono foot-r" href="#top" data-ru="Наверх ↑" data-en="Back to top ↑">Наверх ↑</a>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
